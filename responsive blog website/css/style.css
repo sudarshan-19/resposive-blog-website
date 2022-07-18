@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    font-family: var(--font1);
+    margin: 25px;
+    /* height: 74px; */
+    /* background-color: rgb(217, 147, 217); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 30px;
+    display: flex;
+
+}
+.nav-left span{
+    font-size: 35px;
+    padding-top: 10px ;
+}
+
+.nav-left ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+    font-weight: bold;
+    
+
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+  }
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+}
+.nav-left span:hover{
+    color: purple;
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    z-index: 1;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 345px;
+    width: 345px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.content {
+    /* height: 400px; */
+    height: 100%;
+    display: flex;
+    background-color: rgb(214, 197, 231);
+    margin-top: 12px;
+    border-radius: 12px;
+    padding: 9px;
+    position: relative;
+}
+.content::after{
+    content: " ";
+    background-image: url("../img/home.jpg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.25;
+    
+
+}
+.home-article-content{
+    align-self: center;
+    padding: 0 25px;
+
+}
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-articles {
+   
+    padding-top: 12px;
+    background-color: rgb(217, 147, 217,.5 );
+    border-radius: 13px;
+    position: relative;
+}
+.year-box{
+    position: absolute;
+    width: 340px;
+    height: 455px;
+    background-color: red;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+   
+
+}
+.home-articles h2{
+    padding-left: 12px;
+}
+.home-article img{
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: antiquewhite;
+    bottom: 0;
+}
